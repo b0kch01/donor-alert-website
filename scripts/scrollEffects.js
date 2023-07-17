@@ -5,7 +5,7 @@ window.onload = function () {
   lax.addDriver('scrollY', function () {
     return window.scrollY
   }, {
-    frameStep: 1,
+    frameStep: 0.5,
     easing: "easeInOutQuint"
   })
 
@@ -14,11 +14,11 @@ window.onload = function () {
     scrollY: {
       scale: [
         ["elInY", "elCenterY", "elOutY"],
-        [1.5, 1, 0.6],
+        [1.5, 1, 0.8],
       ],
       translateY: [
         ["elInY", "elCenterY", "elOutY"],
-        [0, 0, "100"],
+        [0, 0, 120],
       ],
       blur: [
         ["elInY", "elCenterY-200"],
@@ -63,11 +63,11 @@ window.onload = function () {
   lax.addElements(".scale", {
     scrollY: {
       scaleX: [
-        ["elCenterY-200", "elCenterY"],
+        ["elInY", "elInY+500"],
         [0.5, 1],
       ],
       opacity: [
-        ["elCenterY-200", "elCenterY"],
+        ["elInY", "elInY+500"],
         [0, 1],
       ]
     }
@@ -78,18 +78,23 @@ window.onload = function () {
       scale: [
         ["elInY", "elCenterY"],
         [1.3, 1],
+      ],
+      opacity: [
+        ["elInY", "elCenterY"],
+        [0, 1],
       ]
+
     }
   })
 
   lax.addElements(".drag", {
     scrollY: {
       translateY: [
-        ["elInY", "elCenterY-50"],
-        [140, 0],
+        ["elInY", "elInY+50"],
+        [40, 0],
       ],
       opacity: [
-        ["elInY", "elCenterY-50"],
+        ["elInY", "elInY+50"],
         [0, 1],
       ]
     }
@@ -97,11 +102,11 @@ window.onload = function () {
   lax.addElements(".drag2", {
     scrollY: {
       translateY: [
-        ["elInY", "elCenterY"],
-        [140, 0],
+        ["elInY", "elInY+100"],
+        [40, 0],
       ],
       opacity: [
-        ["elInY", "elCenterY"],
+        ["elInY", "elInY+100"],
         [0, 1],
       ]
     }
@@ -109,12 +114,34 @@ window.onload = function () {
   lax.addElements(".drag3", {
     scrollY: {
       translateY: [
-        ["elInY", "elCenterY+50"],
-        [140, 0],
+        ["elInY", "elInY+150"],
+        [40, 0],
       ],
       opacity: [
-        ["elInY", "elCenterY+50"],
+        ["elInY", "elInY+150"],
         [0, 1],
+      ]
+    }
+  })
+
+  lax.addElements(".apple-in", {
+    scrollY: {
+      opacity: [
+        ["elCenterY-200", "elCenterY", "elOutY"],
+        [0, 1, 0],
+      ],
+      scale: [
+        ["elCenterY-250", "elOutY+500"],
+        [0.95, 1.05],
+      ]
+    }
+  })
+
+  lax.addElements(".apple-in-absolute", {
+    scrollY: {
+      opacity: [
+        ["elCenterY-100", "elCenterY+250", "elOutY"],
+        [0, 1, 0],
       ]
     }
   })

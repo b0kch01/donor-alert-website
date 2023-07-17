@@ -173,7 +173,7 @@ hr {
   top: 50%;
   left: 50%;
   z-index: -1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   filter: invert();
 }
 
@@ -313,4 +313,15 @@ section {
 
 .feature-grid .feature > .description {
   opacity: 0.4;
+}
+
+
+.part2 {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
