@@ -123,26 +123,4 @@ window.onload = function () {
       ]
     }
   })
-
-  lax.addElements(".apple-in", {
-    scrollY: {
-      opacity: [
-        ["elCenterY-200", "elCenterY", "elOutY"],
-        [0, 1, 0],
-      ],
-      scale: [
-        ["elCenterY-250", "elOutY+500"],
-        [0.95, 1.05],
-      ]
-    }
-  })
-
-  lax.addElements(".apple-in-absolute", {
-    scrollY: {
-      opacity: [
-        ["elCenterY-100", "elCenterY+250", "elOutY"],
-        [0, 1, 0],
-      ]
-    }
-  })
 }
