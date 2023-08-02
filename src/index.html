@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="Donor Alert" />
+  <meta property="og:description" content="A platform connecting donor hospitals to organ procurement centers." />
+
+  <!-- ICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon_trans.png">
+
+  <title>Donor Alert Website</title>
+
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="nav-content">
+      <a class="logo" href="#">
+        <img id="nav-logo" src="./assets/icon_trans.png" alt="logo" />
+        <span>DonorAlert</span>
+      </a>
+
+      <div class="right">
+        <a href="#app">Application</a>
+        <a href="#team">Team</a>
+
+        <a href="https://donor-alert-web.vercel.app/" class="btn">Sign In</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+
+    <svg class="blob-svg" style="width: 100%; height: 100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"
+      filter="url(#blob-filter)">
+      <defs>
+        <filter id="blob-filter">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+        <mask id="blob-mask">
+          <ellipse class="ellipse1"></ellipse>
+          <ellipse class="ellipse2"></ellipse>
+          <circle class="circle1"></circle>
+          <circle class="circle2"></circle>
+          <circle class="circle3"></circle>
+          <circle class="circle4"></circle>
+        </mask>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+          gradientTransform="matrix(-440.643 439.505 -439.505 -440.643 762.505 247.708)">
+          <stop offset="0.2" stop-color="yellow" />
+          <stop offset="0.5" stop-color="red" />
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="600" height="600" mask="url(#blob-mask)" fill="url(#gradient)" />
+    </svg>
+
+    <div class="icon-view">
+      <img class="circles" src="./assets/ui/circles.svg" alt="circles">
+      <img class="hero-icon" src="./assets/icon.png">
+    </div>
+
+    <div class="fadeOut">
+      <h1 class="title"><span class="silver-highlight">The Modern Solution to</span> <span
+          class="highlight">Transplantation</span></h1>
+      <!-- Short subheading -->
+      <h2 class="subtitle silver-highlight">A platform connecting donor hospitals to organ procurement centers
+        through
+        updated digital standards.</h2>
+    </div>
+
+    <video src="./assets/webmedia/formdemosmaller.mp4" style="z-index: 99;" alt="form" class="hero-img scaleUp" autoplay
+      muted loop>
+    </video>
+  </div>
+
+  <section class="part1">
+    <h2 class="header scaleDown silver-highlight">Send donor information to an organ procurement organization
+      through
+      our web
+      form.</h2>
+
+    <hr class="scale">
+
+    <div class="feature-grid">
+      <div class="feature drag">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+          <path fill-rule="evenodd"
+            d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z"
+            clip-rule="evenodd" />
+          <path fill-rule="evenodd"
+            d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd" />
+        </svg>
+        <span class="summary">Form Questionnaire.</span>
+        <span class="description">Provide useful patient information to the OPO.</span>
+      </div>
+
+      <div class="feature drag2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+          <path fill-rule="evenodd"
+            d="M3 4.875C3 3.839 3.84 3 4.875 3h4.5c1.036 0 1.875.84 1.875 1.875v4.5c0 1.036-.84 1.875-1.875 1.875h-4.5A1.875 1.875 0 013 9.375v-4.5zM4.875 4.5a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zm7.875.375c0-1.036.84-1.875 1.875-1.875h4.5C20.16 3 21 3.84 21 4.875v4.5c0 1.036-.84 1.875-1.875 1.875h-4.5a1.875 1.875 0 01-1.875-1.875v-4.5zm1.875-.375a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75A.75.75 0 016 7.5v-.75zm9.75 0A.75.75 0 0116.5 6h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zM3 14.625c0-1.036.84-1.875 1.875-1.875h4.5c1.036 0 1.875.84 1.875 1.875v4.5c0 1.035-.84 1.875-1.875 1.875h-4.5A1.875 1.875 0 013 19.125v-4.5zm1.875-.375a.375.375 0 00-.375.375v4.5c0 .207.168.375.375.375h4.5a.375.375 0 00.375-.375v-4.5a.375.375 0 00-.375-.375h-4.5zm7.875-.75a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm6 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zM6 16.5a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm9.75 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm-3 3a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75zm6 0a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-.75a.75.75 0 01-.75-.75v-.75z"
+            clip-rule="evenodd" />
+        </svg>
+        <span class="summary">Scan Documents.</span>
+        <span class="description"> Quickly upload required documents digitally.</span>
+      </div>
+
+      <div class="feature drag3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+          <path
+            d="M5.85 3.5a.75.75 0 00-1.117-1 9.719 9.719 0 00-2.348 4.876.75.75 0 001.479.248A8.219 8.219 0 015.85 3.5zM19.267 2.5a.75.75 0 10-1.118 1 8.22 8.22 0 011.987 4.124.75.75 0 001.48-.248A9.72 9.72 0 0019.266 2.5z" />
+          <path fill-rule="evenodd"
+            d="M12 2.25A6.75 6.75 0 005.25 9v.75a8.217 8.217 0 01-2.119 5.52.75.75 0 00.298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 107.48 0 24.583 24.583 0 004.83-1.244.75.75 0 00.298-1.205 8.217 8.217 0 01-2.118-5.52V9A6.75 6.75 0 0012 2.25zM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 004.496 0l.002.1a2.25 2.25 0 11-4.5 0z"
+            clip-rule="evenodd" />
+        </svg>
+
+        <span class="summary">Send Alert.</span>
+        <span class="description">Securely notify the local OPO of a potential donor.</span>
+      </div>
+    </div>
+  </section>
+
+  <div id="app" style="height: 20vh;"></div>
+
+  <section class="part2">
+    <div class="part2-title" style="position: relative;">
+
+      <svg class="blob-svg" style="width: 100%" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"
+        filter="url(#blob-filter)">
+        <defs>
+          <filter id="blob-filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+          <mask id="blob-mask">
+            <ellipse class="ellipse1"></ellipse>
+            <ellipse class="ellipse2"></ellipse>
+            <circle class="circle1"></circle>
+            <circle class="circle2"></circle>
+            <circle class="circle3"></circle>
+            <circle class="circle4"></circle>
+          </mask>
+          <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+            gradientTransform="matrix(-440.643 439.505 -439.505 -440.643 762.505 247.708)">
+            <stop offset="0.2" stop-color="red" />
+            <stop offset="1" stop-color="blue" />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="600" height="600" mask="url(#blob-mask)" fill="url(#gradient)" />
+      </svg>
+
+      <img src="./assets/ui/stars.svg" alt="" class="stars">
+
+      <div class="slower">
+        <h1 class="title thin silver-highlight">Meet the App</h1>
+        <h2 class="subtitle silver-highlight">Access to patient data, donor offers,
+          and consent forms through a single application.</h2>
+      </div>
+    </div>
+
+    <div class="phones-container">
+      <div class="phones">
+        <img class="lefter" src="./assets/appmedia/immunrender.png" alt="" />
+        <img class="left" src="./assets/appmedia/detailsrender.png" alt="" />
+        <img class="main" src="./assets/appmedia/homerender.png" alt="" />
+        <img class="right" src="./assets/appmedia/graphrender.png" alt="" />
+        <img class="righter" src="./assets/appmedia/alertrender.png" alt="" />
+      </div>
+    </div>
+
+    <div style="height: 10vh;"></div>
+
+    <h2 class="header scaleDown silver-highlight">We designed our application to streamline the screening process for
+      donor
+      cases.</h2>
+
+    <hr class="scale">
+  </section>
+
+  <div class="boxes">
+    <div class="box up">
+      <img src="./assets/appmedia/immunrender.png">
+
+      <div class="box-text">
+        <h2 class="box-title silver-highlight">Donor Health Reports</h2>
+        <p class="box-description">View your donor data in a clear and concise manner.</p>
+      </div>
+    </div>
+
+    <div class="box up2" late>
+      <img src="./assets/appmedia/detailsrender.png">
+
+      <div class="box-text">
+        <h2 class="box-title silver-highlight">New Quantitative Results</h2>
+        <p class="box-description">Get the latest patient status and case information from the web form.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="boxes">
+    <div class="box up">
+      <img src="./assets/appmedia/graphrender.png">
+
+      <div class="box-text">
+        <h2 class="box-title silver-highlight">Data Visualization</h2>
+        <p class="box-description">Trends of patient vitals and diagnostic results are graphical
+          presented.</p>
+      </div>
+    </div>
+
+    <div class="box up2">
+      <img src="./assets/appmedia/alertrender.png">
+
+      <div class="box-text">
+        <h2 class="box-title silver-highlight">Realtime Monitoring</h2>
+        <p class="box-description">Get alerted for new cases the moment they are reported.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 10vh;"></div>
+
+  <section class="part1">
+
+    <h2 class="header scaleDown silver-highlight">...and other great features</h2>
+
+    <hr class="scale">
+
+    <div class="feature-grid">
+      <div class="feature drag">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd"
+            d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z"
+            clip-rule="evenodd" />
+        </svg>
+
+
+        <span class="summary">CASE-IDs.</span>
+        <span class="description">Generate a unique identifier for cases submitted through this service.</span>
+      </div>
+
+      <div class="feature drag2">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path
+            d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 013.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0121 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 017.5 16.125V3.375z" />
+          <path
+            d="M15 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0017.25 7.5h-1.875A.375.375 0 0115 7.125V5.25zM4.875 6H6v10.125A3.375 3.375 0 009.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V7.875C3 6.839 3.84 6 4.875 6z" />
+        </svg>
+
+        <span class="summary">Consent Documents.</span>
+        <span class="description"> Conveniently view uploaded documents inside the app.</span>
+      </div>
+
+      <div class="feature drag3">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+            clip-rule="evenodd" />
+        </svg>
+
+        <span class="summary">Location & Time.</span>
+        <span class="description">Each case can be tracked to the hospital, address, and exact time.</span>
+      </div>
+    </div>
+
+    <div style="height: 5vh;"></div>
+
+    <div class="feature-grid">
+      <div class="feature drag">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path d="M11.625 16.5a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z" />
+          <path fill-rule="evenodd"
+            d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 001.06-1.06l-1.047-1.048A3.375 3.375 0 1011.625 18z"
+            clip-rule="evenodd" />
+          <path
+            d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z" />
+        </svg>
+
+        <span class="summary">Scans Support.</span>
+        <span class="description">Ability to view CT scans and imaging data inside the app.</span>
+      </div>
+
+      <div class="feature drag2">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path
+            d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+        </svg>
+        <span class="summary">Scalability</span>
+        <span class="description">The platform is designed to support all EPIC hospital systems.</span>
+      </div>
+
+      <div class="feature drag3">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd"
+            d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z"
+            clip-rule="evenodd" />
+        </svg>
+
+
+        <span class="summary">Encrypted.</span>
+        <span class="description">All data is encrypted through modern communication standards.</span>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="team" style="height: 20vh;"></div>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="slower">
+      <h1 class="title thin silver-highlight">Our Team</h1>
+      <h2 class="subtitle silver-highlight">DonorAlert is a product of the <a class="highlight"
+          href="https://maria-currie-lab.stanford.edu">Maria Currie Lab<svg class="icon"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path fill-rule="evenodd"
+              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+              clip-rule="evenodd" />
+          </svg>
+
+        </a>.</h2>
+    </div>
+
+    <div class="team">
+      <div class="profile drag">
+        <img src="./assets/team/maria_pf.jpeg">
+        <p>Maria Currie, MD, PhD</p>
+      </div>
+
+      <div class="profile drag2">
+        <img src="./assets/team/ellen_pf.jpeg">
+        <p>Ellen Lee</p>
+      </div>
+
+      <div class="profile drag3">
+        <img src="./assets/team/blank.jpg">
+        <p>Nathan Choi</p>
+      </div>
+    </div>
+  </section>
+
+  <div style="height: 10vh;"></div>
+
+  <footer>
+    <div class="footer-body">
+      <div class="left">
+        <h1>DonorAlert</h1>
+
+        <div><a href="#">Home</a></div>
+        <div><a href="#app">Application</a></div>
+        <div><a href="#team">Team</a></div>
+      </div>
+
+      <div class="right">
+        <p>Each year, over 40,000 viable potential donor organs are lost due to the current inefficient and outdated
+          transplant process. Tens of thousands of lives and billions of taxpayer dollars could be saved each year by
+          modernizing the technology within the organ transplant system.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <script src="./scripts/lax.js"></script>
+  <script src="./scripts/scrollEffects.js"></script>
+</body>
+
+</html>
